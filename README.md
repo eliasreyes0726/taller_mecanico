@@ -4,7 +4,7 @@ Proyecto para el desarrollo e implementación del modelo completo de gestión y 
 
 ## Información Académica
 
-- **Módulo:** Programación Orientada a Objetos Segura
+- **Módulo:** Programación Orientada a Objetos Seguro
 - **Periodo:** Segundo Semestre, 2026
 
 ## Descripción del Proyecto
