@@ -1,25 +1,38 @@
-# Esta clase representa solo el molde base para la gestión de vehículos en el taller mecánico.
+# Esta clase representa el molde para la gestión de vehículos en el taller mecánico.
 
+# Definición de la clase Vehiculo
 class Vehiculo:
-    patente: str
-    anio: int
-    _en_taller: bool
 
-    # Constructor que inicializa los atributos del vehículo
+    # Constructor que inicializa los atributos privados del vehículo
     def __init__(self, patente: str, anio: int):
-        # Guarda la patente pasada por argumento en el atributo patente
-        self.patente = patente
-        # Guarda el año pasado por argumento en el atributo anio
-        self.anio = anio
-        # Inicializa siempre en False porque un vehículo nuevo no ingresa estando en el taller
-        self._en_taller = False
+        # Asigna la patente pasada por parámetro al atributo privado __patente
+        self.__patente = patente
+        # Asigna el año pasado por parámetro al atributo privado __anio
+        self.__anio = anio
+        # Inicializa el atributo privado __en_taller siempre en False
+        self.__en_taller = False
 
     # Método para registrar el ingreso del vehículo al taller mecánico
     def ingresar(self):
-        # Cambia el estado del atributo _en_taller a True para indicar que está en el taller
-        self._en_taller = True
+        # Cambia el atributo privado __en_taller a True
+        self.__en_taller = True
 
     # Método para registrar la entrega del vehículo al cliente
     def entregar(self):
-        # Cambia el estado del atributo _en_taller a False para indicar que salió del taller
-        self._en_taller = False
+        # Cambia el atributo privado __en_taller a False
+        self.__en_taller = False
+
+    # Método público getter para obtener la patente del vehículo
+    def obtener_patente(self):
+        # Retorna el valor del atributo privado __patente
+        return self.__patente
+
+    # Método público getter para obtener el año del vehículo
+    def obtener_anio(self):
+        # Retorna el valor del atributo privado __anio
+        return self.__anio
+
+    # Método público getter para verificar si el vehículo está en el taller
+    def esta_en_taller(self):
+        # Retorna el valor del atributo privado __en_taller
+        return self.__en_taller
