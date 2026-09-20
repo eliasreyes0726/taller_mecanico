@@ -22,17 +22,20 @@ class Vehiculo:
         # Cambia el atributo privado __en_taller a False
         self.__en_taller = False
 
-    # Método público getter para obtener la patente del vehículo
-    def obtener_patente(self):
+    # El decorador @property permite acceder a este método getter como si fuera un atributo de solo lectura (sin usar paréntesis)
+    @property
+    def patente(self):
         # Retorna el valor del atributo privado __patente
         return self.__patente
 
-    # Método público getter para obtener el año del vehículo
-    def obtener_anio(self):
+    # El decorador @property convierte el método en una propiedad getter de solo lectura para el año del vehículo
+    @property
+    def anio(self):
         # Retorna el valor del atributo privado __anio
         return self.__anio
 
-    # Método público getter para verificar si el vehículo está en el taller
-    def esta_en_taller(self):
+    # El decorador @property transforma la función en una propiedad getter para consultar si está en el taller
+    @property
+    def en_taller(self):
         # Retorna el valor del atributo privado __en_taller
         return self.__en_taller
