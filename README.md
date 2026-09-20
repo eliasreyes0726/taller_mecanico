@@ -40,3 +40,4 @@ A continuación se detalla la secuencia del desarrollo evolutivo del proyecto (1
 | 12 | `1de2d1f` | **Prompt 11:** Implementación del método `tarifa_hora()` en `Vehiculo` retornando el valor entero `5000`. |
 | 13 | `798d34a` | **Prompt 12:** Creación de las subclases `Auto`, `Moto` y `Camion` (heredando de `Vehiculo`) y actualización de `main.py`. |
 | 14 | `6d40639` | **Prompt 13:** Adición del atributo privado `__capacidad_carga`, constructor con `super()` y getter `@property` en `Camion`. |
+| 15 | `c7cb5dc` | **Prompt 14:** Sobrescritura del método `tarifa_hora()` en `Auto` ($25.000), `Moto` ($15.000) y `Camion` ($40.000). |
