@@ -16,6 +16,9 @@ print(f"Vehículo v1 - Patente: {v1.patente}")
 # Imprime si el primer vehículo v1 está en el taller usando su propiedad @property
 print(f"Vehículo v1 - ¿Está en el taller?: {v1.en_taller}")
 
+# Imprime la tarifa por hora de reparación del vehículo v1 llamando al método tarifa_hora()
+print(f"Vehículo v1 - Tarifa por hora: ${v1.tarifa_hora()}")
+
 # Imprime la patente del segundo vehículo v2 usando su propiedad @property
 print(f"Vehículo v2 - Patente: {v2.patente}")
 

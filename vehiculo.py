@@ -39,3 +39,8 @@ class Vehiculo:
     def en_taller(self):
         # Retorna el valor del atributo privado __en_taller
         return self.__en_taller
+
+    # Método que retorna la tarifa por hora de reparación de un vehículo
+    def tarifa_hora(self) -> int:
+        # Retorna el valor entero 5000 como costo por hora de reparación
+        return 5000
