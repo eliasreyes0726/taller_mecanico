@@ -16,3 +16,8 @@ class Camion(Vehiculo):
     def capacidad_carga(self) -> int:
         # Retorna el valor del atributo privado __capacidad_carga
         return self.__capacidad_carga
+
+    # Sobrescribe el método tarifa_hora para devolver la tarifa específica de un camión
+    def tarifa_hora(self) -> int:
+        # Retorna el valor entero 40000 como tarifa por hora para camiones
+        return 40000

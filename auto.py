@@ -3,5 +3,8 @@ from vehiculo import Vehiculo
 
 # Definición de la clase Auto que hereda de la clase base Vehiculo
 class Auto(Vehiculo):
-    # Clase vacía por el momento, hereda todos los atributos y métodos de Vehiculo
-    pass
+
+    # Sobrescribe el método tarifa_hora para devolver la tarifa específica de un automóvil
+    def tarifa_hora(self) -> int:
+        # Retorna el valor entero 25000 como tarifa por hora para autos
+        return 25000
