@@ -1,26 +1,24 @@
-# Importa la clase Vehiculo desde el módulo vehiculo.py
-from vehiculo import Vehiculo
+# Importa la clase Auto desde el módulo auto.py
+from auto import Auto
+# Importa la clase Moto desde el módulo moto.py
+from moto import Moto
+# Importa la clase Camion desde el módulo camion.py
+from camion import Camion
 
-# Instancia el primer vehículo (v1) con patente 'KXPR84' y año 2019
-v1 = Vehiculo(patente="KXPR84", anio=2019)
+# Instancia un objeto de la clase Auto (hereda de Vehiculo)
+mi_auto = Auto(patente="KXPR84", anio=2019)
 
-# Instancia el segundo vehículo (v2) con patente 'JKLM12' y año 2016
-v2 = Vehiculo(patente="JKLM12", anio=2016)
+# Instancia un objeto de la clase Moto (hereda de Vehiculo)
+mi_moto = Moto(patente="JKLM12", anio=2021)
 
-# Registra el ingreso al taller únicamente para el primer vehículo (v1)
-v1.ingresar()
+# Instancia un objeto de la clase Camion (hereda de Vehiculo)
+mi_camion = Camion(patente="TRCK99", anio=2018)
 
-# Imprime la patente del primer vehículo v1 usando su propiedad @property
-print(f"Vehículo v1 - Patente: {v1.patente}")
+# Imprime la patente y tarifa por hora del Auto
+print(f"Auto - Patente: {mi_auto.patente}, Tarifa por hora: ${mi_auto.tarifa_hora()}")
 
-# Imprime si el primer vehículo v1 está en el taller usando su propiedad @property
-print(f"Vehículo v1 - ¿Está en el taller?: {v1.en_taller}")
+# Imprime la patente y tarifa por hora de la Moto
+print(f"Moto - Patente: {mi_moto.patente}, Tarifa por hora: ${mi_moto.tarifa_hora()}")
 
-# Imprime la tarifa por hora de reparación del vehículo v1 llamando al método tarifa_hora()
-print(f"Vehículo v1 - Tarifa por hora: ${v1.tarifa_hora()}")
-
-# Imprime la patente del segundo vehículo v2 usando su propiedad @property
-print(f"Vehículo v2 - Patente: {v2.patente}")
-
-# Imprime si el segundo vehículo v2 está en el taller usando su propiedad @property
-print(f"Vehículo v2 - ¿Está en el taller?: {v2.en_taller}")
+# Imprime la patente y tarifa por hora del Camión
+print(f"Camión - Patente: {mi_camion.patente}, Tarifa por hora: ${mi_camion.tarifa_hora()}")
