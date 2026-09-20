@@ -37,3 +37,4 @@ A continuación se detalla la secuencia del desarrollo evolutivo del proyecto (1
 | 9 | `6bf4ff7` | **Prompt 8:** Pruebas en `main.py` de los métodos getters tradicionales. |
 | 10 | `81710b9` | **Prompt 9:** Refactorización a `@property` (`patente`, `anio`, `en_taller`) comentando su uso. |
 | 11 | `ceb6987` | **Prompt 10:** Pruebas en `main.py` instanciando `v1` y `v2`, ingresando solo `v1` e imprimiendo con `@property`. |
+| 12 | `1de2d1f` | **Prompt 11:** Implementación del método `tarifa_hora()` en `Vehiculo` retornando el valor entero `5000`. |
